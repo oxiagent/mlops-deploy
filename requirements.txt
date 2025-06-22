@@ -6,6 +6,8 @@ torch
 ray[serve]
 python-dotenv
 requests
+numpy
+
 
 
 
