@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+wandb
+torch
+ray[serve]
+python-dotenv
+requests
+
+
+
