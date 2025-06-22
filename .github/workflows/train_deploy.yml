@@ -1,5 +1,3 @@
-
-
 name: Train and Deploy Model
 
 on:
@@ -28,6 +26,10 @@ jobs:
       - name: 📃 Train the model
         run: |
           python train.py
+        env:
+          WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
+          WANDB_PROJECT: linear-regression-pytorch
+          WANDB_ENTITY: s-oksana-set-university
 
       - name: 🌌 Deploy with Ray Serve (Local Test)
         run: |
